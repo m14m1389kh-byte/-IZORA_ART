@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { AuthForm } from "@/components/auth-form";
+export default function RegisterPage(){return <main className="auth-page"><Link href="/" className="wordmark">IZ<span>O</span>RA<span className="wordmark-dot">.</span></Link><section className="auth-card"><div className="section-kicker">حساب کاربری / ۰۲</div><h1>به ایزورا بپیوند.</h1><p>یک حساب بسازید و فعالیت خود را در شبکه آغاز کنید.</p><AuthForm mode="signup"/></section><Link href="/" className="auth-back">بازگشت به صفحه اصلی ←</Link></main>}
