@@ -38,6 +38,6 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
     {error && <p className="form-message form-error">{error}</p>}
     {notice && <p className="form-message form-success">{notice}</p>}
     <button className="button auth-submit" disabled={busy}>{busy?"در حال انجام…":isSignup?"ایجاد حساب":"ورود به حساب"} <span>↗</span></button>
-    <p className="auth-switch">{isSignup?"حساب دارید؟":"حساب کاربری ندارید؟"} <Link href={isSignup?"/login":"/signup"}>{isSignup?"وارد شوید":"ثبت‌نام کنید"}</Link></p>
+    <p className="auth-switch">{isSignup?"حساب دارید؟":"حساب کاربری ندارید؟"} <Link href={isSignup?"/login":"/register"}>{isSignup?"وارد شوید":"ثبت‌نام کنید"}</Link></p>
   </form>;
 }
